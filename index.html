@@ -1,0 +1,181 @@
+<html>
+
+<title>
+
+countdown timer
+
+</title>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<font color= "yellow" face="times new roman" size="50" >
+
+<center>
+
+countdown timer
+
+</center>
+
+</font>
+
+<body bgcolor="c6538c" align="centre">
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<table cellpadding ="10" cellspacing="15" align="centre">
+
+<tc>
+
+<td text color="blue" >days:</td>
+
+<td><input type="integer" size="7" value="0" id="originaldays">
+
+</td>
+
+</tc>
+
+<tc>
+
+<td text color="blue" >hours:</td>
+
+<td><input type="text"  size="7" value="0"  id="originalhours">
+
+</td>
+
+</tc>
+
+<tc>
+
+<td text color="blue" >minutes:</td>
+
+<td><input type="numbers" size="7" value="0" id="originalminutes">
+
+</td>
+
+</tc>
+
+<tc>
+
+<td text color="blue" >seconds:</td>
+
+<td><input type="numbers" size="7" value="0" id="originalseconds">
+
+</td>
+
+</tc>
+
+</table>
+
+<center><input type="submit" value="Submit" id="setTimerBtn"></center>
+
+<br>
+
+<table cellspacing=100 cellpading=50 >
+
+<tr>
+
+<td>
+
+<center>
+
+<button style= "color:solid black;borderradius:30 px;width:100;height:100;bgcolor:blue"  id="startBtn">
+
+start timer
+
+</button>
+
+</center>
+
+</td>
+
+<td>
+
+<center>
+
+<button style= "color:solid black;borderradius:30 px;width:100;height:100;bgcolor:blue" id = "pauseBtn">
+
+pause timer
+
+</button>
+
+</center>
+
+</td><td>
+
+<center>
+
+<button style= "color:solid black;borderradius:30 px;width:100;height:100;bgcolor:blue" id= "resumeBtn">
+
+resume timer
+
+</button>
+
+</center>
+
+</td><td>
+
+<center>
+
+<button style= "color:solid black;borderradius:30px;width:100;height:100;bgcolor:blue" id = "resetBtn">
+
+stop/reset timer
+
+</button>
+
+</center>
+
+</td>
+
+</tr>
+
+</table>
+
+<table cellspacing=100 cellpadding=50 border=5 bordercolor="black" borderradius="30 px" >
+
+<tr>
+
+<td bgcolor="white" id="outputdays">
+
+0
+
+</td>
+
+<td bgcolor="white" id="outputhours">
+
+0
+
+</td>
+
+<td bgcolor="white" id = "outputminutes">
+
+0
+
+</td>
+
+<td bgcolor="white" id = "outputseconds">
+
+0
+
+</td>
+
+</tr>
+
+</table>
+<script type="text/javascript" src="timerScript.js">
+
+</script>
+</body>
+
+</html>
