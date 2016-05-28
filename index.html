@@ -14,7 +14,7 @@ countdown timer
 
 <br>
 
-<font color= "yellow" face="times new roman" size="50" >
+<font color="yellow" face="times new roman" size="50" >
 
 <center>
 
@@ -24,9 +24,7 @@ countdown timer
 
 </font>
 
-<body bgcolor="c6538c" align="centre">
-
-<br>
+<body bgcolor="c6538c" align="centre" >
 
 <br>
 
@@ -38,7 +36,7 @@ countdown timer
 
 <tc>
 
-<td text color="blue" >days:</td>
+<td><font color="blue">days:</font></td>
 
 <td><input type="integer" size="7" value="0" id="originaldays">
 
@@ -48,9 +46,9 @@ countdown timer
 
 <tc>
 
-<td text color="blue" >hours:</td>
+<td><font color="blue">hours:</font></td>
 
-<td><input type="text"  size="7" value="0"  id="originalhours">
+<td><input type="text" size="7" value="0" id="originalhours">
 
 </td>
 
@@ -58,7 +56,7 @@ countdown timer
 
 <tc>
 
-<td text color="blue" >minutes:</td>
+<td><font color="blue">minutes:<font></td>
 
 <td><input type="numbers" size="7" value="0" id="originalminutes">
 
@@ -68,7 +66,7 @@ countdown timer
 
 <tc>
 
-<td text color="blue" >seconds:</td>
+<td><font color="blue">seconds:</font></td>
 
 <td><input type="numbers" size="7" value="0" id="originalseconds">
 
@@ -90,7 +88,9 @@ countdown timer
 
 <center>
 
-<button style= "color:solid black;borderradius:30 px;width:100;height:100;bgcolor:blue"  id="startBtn">
+<button class="button button1" style= "color:red;borderradius:30 px;width:100;height:100"
+
+id="startBtn">
 
 start timer
 
@@ -104,7 +104,9 @@ start timer
 
 <center>
 
-<button style= "color:solid black;borderradius:30 px;width:100;height:100;bgcolor:blue" id = "pauseBtn">
+<button class="button button1" style= "color:red;borderradius:30 px;width:100;height:100" id =
+
+"pauseBtn">
 
 pause timer
 
@@ -116,7 +118,9 @@ pause timer
 
 <center>
 
-<button style= "color:solid black;borderradius:30 px;width:100;height:100;bgcolor:blue" id= "resumeBtn">
+<button class="button button1" style= "color:red;borderradius:30 px;width:100;height:100" id=
+
+"resumeBtn">
 
 resume timer
 
@@ -128,7 +132,9 @@ resume timer
 
 <center>
 
-<button style= "color:solid black;borderradius:30px;width:100;height:100;bgcolor:blue" id = "resetBtn">
+<button class="button button1" style= "color:red;borderradius:30px;width:100;height:100" id =
+
+"resetBtn">
 
 stop/reset timer
 
@@ -142,40 +148,80 @@ stop/reset timer
 
 </table>
 
-<table cellspacing=100 cellpadding=50 border=5 bordercolor="black" borderradius="30 px" >
+<table cellspacing=100 cellpadding=50 border=5 bordercolor="solid black" borderradius="30 px"
+
+>
 
 <tr>
 
-<td bgcolor="white" id="outputdays">
+<style>
+
+.button {
+
+background­color: #4CAF50; /* Green */
+
+border: 1;
+
+bordercolor: blue;
+
+padding: 16px 32px;
+
+text­align: center;
+
+display: inline­block;
+
+font­size: 16px;
+
+margin: 4px 2px;
+
+­webkit­transition­duration: 0.4s; /* Safari */
+
+transition­duration: 0.4s;
+
+cursor: pointer;
+
+borderradius:30 px"
+
+}
+
+.button1:hover{
+
+background­color: yellow;
+
+color: yellow;
+
+}
+
+</style>
+
+<td bgcolor="white" id="outputdays"><font color="black">
 
 0
 
+</font>
+
 </td>
 
-<td bgcolor="white" id="outputhours">
+<td bgcolor="white" id="outputhours"><font color="black">
 
 0
 
-</td>
+</font></td>
 
-<td bgcolor="white" id = "outputminutes">
-
-0
-
-</td>
-
-<td bgcolor="white" id = "outputseconds">
+<td bgcolor="white" id = "outputminutes"><font color="black">
 
 0
 
-</td>
+</font></td>
+
+<td bgcolor="white" id = "outputseconds"><font color="black">
+
+0
+
+</font></td>
 
 </tr>
 
 </table>
-<script type="text/javascript" src="timerScript.js">
 
-</script>
-</body>
-
-</html>
+<script type="text/javascript" src = "timerScript.js"></script>
